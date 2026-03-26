@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Verdana', 'Geneva', sans-serif;
 }
+
 /*etilo del body*/
 body{
     background-color: #f4f4f4;
@@ -13,7 +14,8 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-/*boton para llamar a contacto global*/
+
+/*boton*/
 .cta-button{
     display: inline-block;
     padding: 15px 30px;
@@ -23,7 +25,7 @@ body{
     font-weight: bold;
     border-radius: 4px;
     text-transform: uppercase;
-    transition: background-color 0.3s transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s; /* 🔥 corregido */
     box-shadow: 0 4px 0 #d39e00;
 }
 
@@ -46,11 +48,7 @@ body{
 .logo{
     display: flex;
     align-items: center;
-}
-
-.logo{
-    height: 70px;
-    width: auto;
+    height: 70px; 
 }
 
 .navbar ul{
@@ -66,7 +64,7 @@ body{
     text-transform: uppercase;
     font-size: 14px;
     padding: 5px 10px;
-    transition: color 0.3 ease, border-bottom 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .navbar a:hover{
@@ -124,7 +122,7 @@ body{
     filter: invert(78%) sepia(54%) saturate(638%) hue-rotate(358deg) brightness(100%) contrast(104%);
 }
 
-.imain-index{
+.main-index{
     padding: 0;
     background: none;
     flex: 1;
@@ -133,7 +131,7 @@ body{
 .hero-full{
     height: 80vh;
     min-height: 500px;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8), url('img/principal/constructora-principal.jpg'));
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('img/principal/constructora-principal.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -154,7 +152,7 @@ body{
     color: #f1c40f;
     text-transform: uppercase;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgb(0,0,0,0.5);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* 🔥 corregido */
 }
 
 .hero-content p{

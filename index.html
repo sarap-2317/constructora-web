@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -12,7 +13,7 @@
         <img src="img/principal/logo.jpg" alt="Constructura Hernandez" class="logo-img">
     </div>
 
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="index.html" class="active">Inicio</a></li>
             <li><a href="empresa.html">La empresa</a></li>
@@ -54,8 +55,8 @@
                     <img src="img/banner1/banner1.4.jpg" class="carousel-slide" alt="banner1">
                     <img src="img/banner1/banner1.5.jpg" class="carousel-slide" alt="banner1">
                 </div>
-                   <button class="carousel-btn prev" onclick="moveSlide('track1', 'dots1', -1)">&#10034;</button>
-                   <button class="carousel-btn next" onclick="moveSlide('track1', 'dots1', -1)">&#10095;</button>
+                   <button class="carousel-btn prev" onclick="moveSlide('track1', 'dots1', -1)">&#10094;</button>
+                   <button class="carousel-btn next" onclick="moveSlide('track1', 'dots1', 1)">&#10095;</button>
 
                      <div class="carousel-indicators" id="dots1">
                         <span class="dot active" onclick="jumpToSlide('track1', 'dots1', 0)"></span>
@@ -95,67 +96,60 @@
 
        </section>
 
+</main>
 
-    </main>
+<footer class="footer">
+    <div>
 
-    <footer class="footer">
-        <div>
-
-            <div class="footer-col logo-col">
-                <img src="img/principal/logo.jpg" class="footer-logo-img" alt="Constructora Morgon">
-                <div class="social-links">
-                    <a href="#" class="social-icon"><img src="iconos/facebook.png" alt="facebook"></a>
-                    <a href="#" class="social-icon"><img src="iconos/instagram.png" alt="instagram"></a>
-                    <a href="#" class="social-icon"><img src="iconos/email.png" alt="email"></a>
-                    <a href="#" class="social-icon"><img src="iconos/whatsapp.png" alt="whatsapp"></a>
-                </div>
-            </div>
-            
-            <div class="footer-col links-col">
-                <h3>Inormacion</h3>
-                <ul> 
-                    <li> <a href="empresa.html">Nosotros</a></li>
-                    <li> <a href="servicios.html">Desarollos</a></li>
-                    <li> <a href="servicios.html">Servicios</a></li>
-                    <li> <a href="contacto.html">Contáctanos</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col contact-col">
-                <h3>Contacto</h3>
-                <table class="contact-table">
-                    <tr>
-                        <td class="icon-ell"><img src="iconos/telefono.png" class="contact-icon-img" alt="tel"></td>
-                        <td>Telefono <br> <small>+52 (441) 1053146</small></td>
-                    </tr>
-                    <tr>
-                        <td class="icon-cell"><img src="iconos/email.png" class="contact-icon-img" alt="Email"></td>
-                        <td>Correo <br> <small>informesaqui@.com</small></td>
-                    </tr>
-                    <tr>
-                        <td class="icon-cell"><img src="iconos/instagram.png" class="contact-icon-img" alt="instagram"></td>
-                        <td>Instagran <br> <small>@ContructoraMorgon</small></td>
-                    </tr>
-                    <tr>
-                        <td class="icon-cell"><img src="iconos/whatsapp.png" class="contact-icon-img" alt="Instagran"></td>
-                        <td>WhatsApp <br> <small>+52 (441)-105-3146</small></td>
-                    </tr>
-                </table>
+        <div class="footer-col logo-col">
+            <img src="img/principal/logo.jpg" class="footer-logo-img" alt="Constructora Morgon">
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="iconos/facebook.png" alt="facebook"></a>
+                <a href="#" class="social-icon"><img src="iconos/instagram.png" alt="instagram"></a>
+                <a href="#" class="social-icon"><img src="iconos/email.png" alt="email"></a>
+                <a href="#" class="social-icon"><img src="iconos/whatsapp.png" alt="whatsapp"></a>
             </div>
         </div>
-
-        <!--Varra final del pie de pagina con derschos recervades-->
-        <div class="footer-bottom">
-            <p>Todos los derechos reservados. 2026 &copy; Contructora Morgon. | <a href="#"></a></p>
+        
+        <div class="footer-col links-col">
+            <h3>Inormacion</h3>
+            <ul> 
+                <li> <a href="empresa.html">Nosotros</a></li>
+                <li> <a href="servicios.html">Desarollos</a></li>
+                <li> <a href="servicios.html">Servicios</a></li>
+                <li> <a href="contacto.html">Contáctanos</a></li>
+            </ul>
         </div>
 
+        <div class="footer-col contact-col">
+            <h3>Contacto</h3>
+            <table class="contact-table">
+                <tr>
+                    <td class="icon-cell"><img src="iconos/telefono.png" class="contact-icon-img" alt="tel"></td>
+                    <td>Telefono <br> <small>+52 (441) 1053146</small></td>
+                </tr>
+                <tr>
+                    <td class="icon-cell"><img src="iconos/email.png" class="contact-icon-img" alt="Email"></td>
+                    <td>Correo <br> <small>informesaqui@.com</small></td>
+                </tr>
+                <tr>
+                    <td class="icon-cell"><img src="iconos/instagram.png" class="contact-icon-img" alt="instagram"></td>
+                    <td>Instagran <br> <small>@ContructoraMorgon</small></td>
+                </tr>
+                <tr>
+                    <td class="icon-cell"><img src="iconos/whatsapp.png" class="contact-icon-img" alt="Instagran"></td>
+                    <td>WhatsApp <br> <small>+52 (441)-105-3146</small></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
-    </footer>
+    <div class="footer-bottom">
+        <p>Todos los derechos reservados. 2026 &copy; Contructora Morgon. | <a href="#"></a></p>
+    </div>
 
-
-
-
+</footer>
 
 
 </body>
-</html> 
+</html>
