@@ -25,7 +25,7 @@ body{
     font-weight: bold;
     border-radius: 4px;
     text-transform: uppercase;
-    transition: background-color 0.3s, transform 0.2s; /* 🔥 corregido */
+    transition: background-color 0.3s, transform 0.2s; 
     box-shadow: 0 4px 0 #d39e00;
 }
 
@@ -152,7 +152,7 @@ body{
     color: #f1c40f;
     text-transform: uppercase;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* 🔥 corregido */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); 
 }
 
 .hero-content p{
