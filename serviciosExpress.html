@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="header">
+    <div class="logo">
+        <img src="img/principal/logo.jpg" alt="Constructura Hernandez" class="logo-img">
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="empresa.html">La empresa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="serviciosExpress.html" class="active">Servicios Expres</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <input type="search" placeholder="Buscar Proyectos..." class="search-bar">
+        <button class="search-btn">
+              <img src="iconos/lupa.png" alt="buscar" class="search-icon-img">
+        </button>
+    </div>
+</header>
+
+<main class="main-index">
+      <section class="search-wrap">
+            <h1>Servicios Express</h1>
+                <div class="search-box"> 
+                    <input type="text" id="inputBusqueda" placeholder="¿Qué servicio buscas?" class="input-curvo">
+            <button id="btnFiltrar" class="btn-curvo">Buscar</button>
+        </div>
+</section>
+
+        <div id="contenedor-grid" class="services-grid-large">
+        </div>
+
+</main>
+
+<footer class="footer">
+    <div>
+
+        <div class="footer-col logo-col">
+            <img src="img/principal/logo.jpg" class="footer-logo-img" alt="Constructora Morgon">
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="iconos/facebook.png" alt="facebook"></a>
+                <a href="#" class="social-icon"><img src="iconos/instagram.png" alt="instagram"></a>
+                <a href="#" class="social-icon"><img src="iconos/email.png" alt="email"></a>
+                <a href="#" class="social-icon"><img src="iconos/whatsapp.png" alt="whatsapp"></a>
+            </div>
+        </div>
+        
+        <div class="footer-col links-col">
+            <h3>Inormacion</h3>
+            <ul> 
+                <li> <a href="empresa.html">Nosotros</a></li>
+                <li> <a href="servicios.html">Desarollos</a></li>
+                <li> <a href="servicios.html">Servicios</a></li>
+                <li> <a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+            <h3>Contacto</h3>
+            <table class="contact-table">
+                <tr>
+                    <td class="icon-cell"><img src="iconos/telefono.png" class="contact-icon-img" alt="tel"></td>
+                    <td>Telefono <br> <small>+52 (441) 1053146</small></td>
+                </tr>
+                <tr>
+                    <td class="icon-cell"><img src="iconos/email.png" class="contact-icon-img" alt="Email"></td>
+                    <td>Correo <br> <small>informesaqui@.com</small></td>
+                </tr>
+                <tr>
+                    <td class="icon-cell"><img src="iconos/instagram.png" class="contact-icon-img" alt="instagram"></td>
+                    <td>Instagran <br> <small>@ContructoraMorgon</small></td>
+                </tr>
+                <tr>
+                    <td class="icon-cell"><img src="iconos/whatsapp.png" class="contact-icon-img" alt="Instagran"></td>
+                    <td>WhatsApp <br> <small>+52 (441)-105-3146</small></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Todos los derechos reservados. 2026 &copy; Contructora Morgon. | <a href="#"></a></p>
+    </div>
+
+</footer>
+
+ <script src="funciones/serviciosExpress.js"></script>
+ <script src="funciones/global.js"></script>
+
+
+</body>
+</html>
