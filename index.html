@@ -1,16 +1,16 @@
 <!DOCTYPE html> 
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Constructora Morgon</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
 <header class="header">
     <div class="logo">
-        <img src="img/principal/logo.jpg" alt="Constructura Hernandez" class="logo-img">
+        <img src="img/principal/logo.jpg" alt="Constructora Morgon" class="logo-img">
     </div>
 
     <nav class="navbar">
@@ -18,7 +18,7 @@
             <li><a href="index.html" class="active">Inicio</a></li>
             <li><a href="empresa.html">La empresa</a></li>
             <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="serviciosExpress.html">Servicios Expres</a></li>
+            <li><a href="serviciosExpress.html">Servicios Express</a></li>
             <li><a href="contacto.html">Contactanos</a></li>
         </ul>
     </nav>
@@ -26,28 +26,30 @@
     <div class="search-container">
         <input type="search" placeholder="Buscar Proyectos..." class="search-bar">
         <button class="search-btn">
-              <img src="iconos/lupa.png" alt="buscar" class="search-icon-img">
+            <img src="iconos/lupa.png" alt="buscar" class="search-icon-img">
         </button>
     </div>
 </header>
 
 <main class="main-index">
+
     <section class="hero-full">
         <div class="hero-content">
             <h2>Construimos el Futuro Que soñaste</h2>
-            <p>En Constructora Morgon,  tranformamos tus sueños en realidad. Con mas 30 Años de Experiencia. Somos los nuemro 1 en Mexico</p>
-            <a href="servicios.html" class="cta-button">Conoce nuetros servicios</a>
+            <p>En Constructora Morgon, transformamos tus sueños en realidad. Con mas 30 Años de Experiencia. Somos los numero 1 en Mexico</p>
+            <a href="servicios.html" class="cta-button">Conoce nuestros servicios</a>
         </div>
     </section>
 
-    <section class="carousel-sections">
+    <section class="carousels-section">
          
-        <div>
-            <h2>nuetros Proyectos Destacados</h2>
-            <p>Esplora nuetras obras mas recientes y el equipo que las hace posible</p>
+        <div class="text-center">
+            <h2>Nuestros Proyectos Destacados</h2>
+            <p>Explora nuestras obras mas recientes y el equipo que las hace posible</p>
         </div>
 
-        <div class="carousel-wrapper">
+        <div class="carousels-wrapper">
+
             <div class="carousel-container">
                 <div class="carousel-track" id="track1">
                     <img src="img/banner1/banner1.1.jpg" class="carousel-slide active" alt="banner1">
@@ -56,51 +58,48 @@
                     <img src="img/banner1/banner1.4.jpg" class="carousel-slide" alt="banner1">
                     <img src="img/banner1/banner1.5.jpg" class="carousel-slide" alt="banner1">
                 </div>
-                   <button class="carousel-btn prev" onclick="moveSlide('track1', 'dots1', -1)">&#10094;</button>
-                   <button class="carousel-btn next" onclick="moveSlide('track1', 'dots1', 1)">&#10095;</button>
 
-                     <div class="carousel-indicators" id="dots1">
-                        <span class="dot active" onclick="jumpToSlide('track1', 'dots1', 0)"></span>
-                        <span class="dot" onclick="jumpToSlide('track1', 'dots1', 1)"></span>
-                        <span class="dot" onclick="jumpToSlide('track1', 'dots1', 2)"></span>
-                        <span class="dot" onclick="jumpToSlide('track1', 'dots1', 3)"></span>
-                        <span class="dot" onclick="jumpToSlide('track1', 'dots1', 4)"></span>
-                      </div>                 
+                <button class="carousel-btn prev" onclick="moveSlide('track1', 'dots1', -1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="moveSlide('track1', 'dots1', 1)">&#10095;</button>
+
+                <div class="carousel-indicators" id="dots1">
+                    <span class="dot active" onclick="jumpToSlide('track1', 'dots1', 0)"></span>
+                    <span class="dot" onclick="jumpToSlide('track1', 'dots1', 1)"></span>
+                    <span class="dot" onclick="jumpToSlide('track1', 'dots1', 2)"></span>
+                    <span class="dot" onclick="jumpToSlide('track1', 'dots1', 3)"></span>
+                    <span class="dot" onclick="jumpToSlide('track1', 'dots1', 4)"></span>
                 </div>
+            </div>
 
-                <div class="carousel-container">
-                      
-                    <div class="carousel-track" id="track2">
-                        <img src="img/banner2/banner2.1.jpg" class="carousel-slide active" alt="banner2">
-                        <img src="img/banner2/banner2.2.jpg" class="carousel-slide" alt="banner2">
-                        <img src="img/banner2/banner2.3.jpg" class="carousel-slide" alt="banner2">
-                        <img src="img/banner2/banner2.4.jpg" class="carousel-slide" alt="banner2">
-                        <img src="img/banner2/banner2.5.jpg" class="carousel-slide" alt="banner2">
-                    </div>
+            <div class="carousel-container">
+                <div class="carousel-track" id="track2">
+                    <img src="img/banner2/banner2.1.jpg" class="carousel-slide active" alt="banner2">
+                    <img src="img/banner2/banner2.2.jpg" class="carousel-slide" alt="banner2">
+                    <img src="img/banner2/banner2.3.jpg" class="carousel-slide" alt="banner2">
+                    <img src="img/banner2/banner2.4.jpg" class="carousel-slide" alt="banner2">
+                    <img src="img/banner2/banner2.5.jpg" class="carousel-slide" alt="banner2">
+                </div>
                      
-                    <button class="carousel-btn prev" onclick="moveSlide('track2', 'dots2', -1)">&#10094;</button>
-                    <button class="carousel-btn next" onclick="moveSlide('track2', 'dots2', 1)">&#10095;</button>
+                <button class="carousel-btn prev" onclick="moveSlide('track2', 'dots2', -1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="moveSlide('track2', 'dots2', 1)">&#10095;</button>
 
-                    <div class="carousel-indicators" id="dots2">
-                        <span class="dot active" onclick="jumpToSlide('track2', 'dots2', 0)"></span>
-                        <span class="dot" onclick="jumpToSlide('track2', 'dots2', 1)"></span>
-                        <span class="dot" onclick="jumpToSlide('track2', 'dots2', 2)"></span>
-                        <span class="dot" onclick="jumpToSlide('track2', 'dots2', 3)"></span>
-                        <span class="dot" onclick="jumpToSlide('track2', 'dots2', 4)"></span>
-                    </div>
-
+                <div class="carousel-indicators" id="dots2">
+                    <span class="dot active" onclick="jumpToSlide('track2', 'dots2', 0)"></span>
+                    <span class="dot" onclick="jumpToSlide('track2', 'dots2', 1)"></span>
+                    <span class="dot" onclick="jumpToSlide('track2', 'dots2', 2)"></span>
+                    <span class="dot" onclick="jumpToSlide('track2', 'dots2', 3)"></span>
+                    <span class="dot" onclick="jumpToSlide('track2', 'dots2', 4)"></span>
                 </div>
+            </div>
 
-               </div>
+        </div>
 
-          </div>
-
-       </section>
+    </section>
 
 </main>
 
 <footer class="footer">
-    <div>
+    <div class="footer-container">
 
         <div class="footer-col logo-col">
             <img src="img/principal/logo.jpg" class="footer-logo-img" alt="Constructora Morgon">
@@ -113,12 +112,12 @@
         </div>
         
         <div class="footer-col links-col">
-            <h3>Inormacion</h3>
+            <h3>Informacion</h3>
             <ul> 
-                <li> <a href="empresa.html">Nosotros</a></li>
-                <li> <a href="servicios.html">Desarollos</a></li>
-                <li> <a href="servicios.html">Servicios</a></li>
-                <li> <a href="contacto.html">Contáctanos</a></li>
+                <li><a href="empresa.html">Nosotros</a></li>
+                <li><a href="servicios.html">Desarrollos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
             </ul>
         </div>
 
@@ -135,25 +134,24 @@
                 </tr>
                 <tr>
                     <td class="icon-cell"><img src="iconos/instagram.png" class="contact-icon-img" alt="instagram"></td>
-                    <td>Instagran <br> <small>@ContructoraMorgon</small></td>
+                    <td>Instagram <br> <small>@ConstructoraMorgon</small></td>
                 </tr>
                 <tr>
-                    <td class="icon-cell"><img src="iconos/whatsapp.png" class="contact-icon-img" alt="Instagran"></td>
+                    <td class="icon-cell"><img src="iconos/whatsapp.png" class="contact-icon-img" alt="whatsapp"></td>
                     <td>WhatsApp <br> <small>+52 (441)-105-3146</small></td>
                 </tr>
             </table>
         </div>
+
     </div>
 
     <div class="footer-bottom">
-        <p>Todos los derechos reservados. 2026 &copy; Contructora Morgon. | <a href="#"></a></p>
+        <p>Todos los derechos reservados. 2026 &copy; Constructora Morgon.</p>
     </div>
-
 </footer>
 
- <script src="funciones/index.js"></script>
- <script src="funciones/global.js"></script>
-
+<script src="funciones/index.js"></script>
+<script src="funciones/global.js"></script>
 
 </body>
 </html>

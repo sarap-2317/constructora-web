@@ -48,13 +48,17 @@ body{
 .logo{
     display: flex;
     align-items: center;
-    height: 70px; 
+}
+
+.logo-img{
+    height: 70px;
+    width: auto;
 }
 
 .navbar ul{
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .navbar a {
@@ -85,12 +89,13 @@ body{
     padding: 8px 12px;
     border: 2px solid #bdc3c7;
     border-radius: 4px 0 0 4px;
+    background-color: #f4f4f4;
     outline: none;
     border-right: none;
 }
 
 .search-bar:focus{
-    border-color: #f39c12;
+    border-color: #f1c40f;
 }
 
 .search-btn{
@@ -165,8 +170,9 @@ body{
 /*carrucel*/
 
 .carousels-section {
-    padding: 80xp 20px;
+    padding: 80px 20px;
     background-color: #f4f4f4;
+    margin-top: 50px;
 }
 
 .text-center{
@@ -272,7 +278,7 @@ body{
     align-items: center;
     text-align: center;
     padding: 60px 20px;
-    background-image: radial-gradient(#dcdde1 1px, trasparent 1px);
+    background-image: radial-gradient(#dcdde1 1px, transparent 1px);
     background-size: 20px 20px;
 }
 
@@ -308,7 +314,6 @@ body{
 
 .section-title{
     margin-bottom: 50px;
-
 }
 
 .section-title h2 {
@@ -335,9 +340,10 @@ body{
 .footer {
     background-color: #000000;
     color:#bdc3c7;
-    margin-top: auto;
+    margin-top: 50px;
     border-top: 5px solid #f1c40f;
 }
+
 .footer-container{
     display: flex;
     justify-content: space-between;
@@ -470,16 +476,16 @@ body{
 }
 
 .search-box {
-    position: relative; /* Indispensable para anclar el botón internamente */
+    position: relative;
     display: flex;
     align-items: center;
-    max-width: 500px; /* Define un ancho claro para centrarlo */
+    max-width: 500px;
     margin: 0 auto;
 }
 
 .input-curvo {
     width: 100%;
-    padding: 15px 100px 15px 25px; /* Espacio extra a la derecha para el botón */
+    padding: 15px 100px 15px 25px;
     border-radius: 50px;
     border: 2px solid #333;
     outline: none;
@@ -488,15 +494,15 @@ body{
 }
 
 .btn-curvo {
-    position: absolute; /* Se mueve libremente dentro del search-box */
-    right: 5px; /* Se pega al borde derecho interno */
+    position: absolute;
+    right: 5px;
     padding: 10px 25px;
     border-radius: 50px;
     background-color: #f1c40f;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    z-index: 10; /* Asegura que esté por encima del input */
+    z-index: 10;
 }
 
 .btn-curvo:hover {
@@ -529,7 +535,7 @@ body{
 }
 
 .servicio-card:hover {
-    transform: translateY(-10px); /* Efecto de elevación */
+    transform: translateY(-10px);
     border-color: #f1c40f;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
@@ -538,7 +544,7 @@ body{
 .servicio-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    object-fit: cover;
 }
 
 .servicio-card h3 {
@@ -564,15 +570,15 @@ body{
 
 /* --- ESTILOS DEL MODAL --- */
 .modal {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8); /* Fondo oscuro */
-    backdrop-filter: blur(5px); /* Efecto de desenfoque al fondo */
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
 }
 
 .modal-content {
@@ -614,7 +620,7 @@ body{
 /*Diseño repo pa moviles  final*/
 
 @media (max-width: 850px){
-    .zigzag-row, .zigzap-row.reverse{
+    .zigzag-row, .zigzag-row.reverse{
         flex-direction: column;
         gap: 30px;
     }
@@ -624,6 +630,6 @@ body{
     }
 
     .services-grid-large{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 }
